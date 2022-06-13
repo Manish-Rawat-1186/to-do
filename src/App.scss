@@ -72,7 +72,7 @@ body {
     color: hsla(260, 2%, 25%, 0.7);
     width: 70%;
     margin-bottom: 20px;
-  &: focus {
+  & ::focus {
     outline: none;
     border: solid 3px #ea95e0;
   }
