@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <section class="container">
+    <div class="heading">
+      <h1 class="heading__title">To-Do List</h1>
     </div>
-  );
+    <form class="form">
+      <div>
+        <label class="form__label" for="todo">~ Today I need to ~</label>
+        <input class="form__input"
+             type="text" 
+             id="todo" 
+             name="to-do"
+             size="30"
+             required />
+        <button class="button"><span>Submit</span></button>
+      </div>
+    </form>
+    <div>
+      <ul class="toDoList">
+      </ul>
+    </div>
+  </section>
+   
+    
+  )
 }
 
 export default App;
