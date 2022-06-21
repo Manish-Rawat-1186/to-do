@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { MdDelete } from "react-icons/md";
 import './App.scss'
 
 const App = () => {
@@ -44,14 +45,15 @@ const App = () => {
        {
          todos.map((todo, index) => (
            <li 
-           onClick={(e) => {
+            key={index}
+           >{todo} <span><MdDelete key={index} className="delete" onClick={(e) => {
               const newTodos = todos.filter((_,todo) => todo !== index)
 
               setTodos(newTodos);
-           }} key={index}
-           >{todo}  </li>
+           }} /></span>  </li>
          ))
        }
+       
       </ul>
     </div>
   </section>

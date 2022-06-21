@@ -111,6 +111,7 @@ body {
 }
 .toDoList {
   text-align: left;
+  overflow: hidden;
   li {
     position: relative;
     padding: 0.5rem;
@@ -119,6 +120,17 @@ body {
     text-decoration: line-through wavy #24bffb;
   }
 }
+
+.toDoList span{
+  text-align: right;
+}
+
+.delete{
+  position: relative;
+  left : 4rem;
+  overflow: hidden;
+}
+
 
 
 
